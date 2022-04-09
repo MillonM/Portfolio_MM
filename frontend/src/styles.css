@@ -1,1 +1,263 @@
-/* You can add global styles to this file, and also import other style files */
+.header{
+    margin-left:0px;
+}
+
+.yo_programo{
+    position:relative;
+    width: 10%
+}
+
+.banner{
+    margin-right:0px;
+    width: 100%;
+}
+
+.foto_perfil{
+    top: -20px;
+    position: fixed;
+    width: 40%;
+    fill-rule: 10px;
+    border-radius: 50%;
+    position:relative;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+#nombre{
+    font-family: 'Oswald', sans-serif;
+    font-size: 30px;
+    font-style: black;
+    text-align: center;
+    padding: 5px; 
+}
+
+
+#ubicacion{
+    margin-left:0px;
+    font-family: 'Syne Mono', monospace;
+    text-align: center;
+    font-size: 15px;
+}
+
+
+#acerca_de{
+    margin-bottom: 10px;
+    margin-left:32px;  
+    margin-top: 20px;  
+    font-family: 'Oswald', sans-serif;
+    font-size: 30px;
+    font-style: black;
+    text-align: left;
+}
+
+#info_personal h6{
+    margin-bottom: 5px;
+    margin-left: 32px;
+    font-family: 'Syne Mono', monospace;
+    font-style: black;
+    font-size: 14px;
+}
+
+#info_personal p{
+    padding: 3px;
+    margin-top: 10px;
+    margin-left: 32px;
+    margin-right: 70px;
+    margin-bottom: 10px;
+    font-family: 'Syne Mono', monospace;
+    text-align: justify;
+}
+
+#experiencia_titulo{
+    margin-top: 70px;
+    padding: 10px;
+    margin-left:20px;
+    font-size: 50px;
+    border-bottom: solid;
+    border-color: gray;
+    border-width: 1px;
+    border-bottom-style: dashed;
+    border-bottom-left-radius: 15px;
+}
+
+#experiencia h2{
+    margin-top: 10px;
+    padding: 3px;
+    margin-left:32px;
+    font-size: 35px;
+    font-family: 'Oswald', sans-serif;
+    border-color: gray;
+}
+
+#experiencia p{
+    padding: 3px;
+    margin-left:32px;
+    margin-right: 70px;
+    text-align: justify;
+    font-family: 'Syne Mono', monospace;
+    font-size: 15px;
+    border-color: gray;
+}
+
+
+.MediaMonks{
+    margin-top: 80px;
+    margin-left: 100px;
+    width: 40%;
+}
+
+
+.kantar{
+    margin-top: 80px;
+    margin-bottom: 40px;
+    margin-left: 110px;
+    width: 40%;
+}
+
+
+#educacion_titulo{
+    margin-top: 40px;
+    padding: 10px;
+    margin-left:20px;
+    font-size: 50px;
+    border-bottom: solid;
+    border-color: gray;
+    border-bottom-style: dashed;
+    border-width: 1px;
+    border-bottom-left-radius: 15px;
+}
+
+
+#educacion h2{
+    margin-top: 10px;
+    padding: 3px;
+    margin-left:32px;
+    font-size: 35px;
+    font-family: 'Oswald', sans-serif;
+    border-color: gray;
+}
+
+#educacion p{
+    padding: 3px;
+    margin-left:32px;
+    margin-right: 70px;
+    text-align: justify;
+    font-family: 'Syne Mono', monospace;
+    font-size: 15px;
+    border-color: gray;
+}
+
+
+
+.sociologia{
+    margin-top: 20px;
+    margin-left: 200px;
+    width: 20%;
+}
+
+.Flacso{
+    margin-top: 40px;
+    margin-left: 180px;
+    width: 25%; 
+}
+
+
+
+
+#skills_titulo{
+    margin-top: 40px;
+    padding: 10px;
+    margin-left:20px;
+    font-size: 50px;
+    border-bottom: solid;
+    border-color: gray;
+    border-width: 1px;
+    border-bottom-style: dashed;
+    border-bottom-left-radius: 15px;
+}
+
+
+
+.GMP{
+    width: 100%; 
+    align-items: right;
+    display: flex;
+}
+
+.BQ{
+    width: 100%; 
+    align-items: right;
+    display: flex;
+}
+
+.Python{
+    width: 100%; 
+    align-items: right;
+    display: flex;
+}
+
+
+
+
+
+
+.wrapper{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 50px;
+    margin-right: 100px;
+}
+
+.wrapper .card{
+    width: calc(33% - 20px);
+    background: #fff;
+    height: 300px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    margin-right: 100px;
+}
+
+.wrapper .card .circle{
+    position: relative;
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+}
+
+.card .circle .box,
+.card .circle .box span{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}
+.card .circle .box{
+    height: 100%;
+    width: 100%;
+    transform: translate(-50%, -50%) scale(0.9);
+    border-radius: 50%;
+}
+
+.card .circle .box span{
+    transform: translate(-50%, -50%);
+    font-size: 45px;
+    font-weight: 600px;
+    font-family: 'Syne Mono', monospace;
+    transition: all 0.1s;
+}
+
+.card .text{
+    font-family: 'Oswald', sans-serif;
+    font-size: 25px;
+    font-weight: 100px;
+}
+
+.card .circle:hover .box{
+    transform: translate(-50%, -50%) scale(1.10);
+}
+
