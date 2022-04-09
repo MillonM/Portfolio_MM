@@ -1,0 +1,16 @@
+{
+    "persona" :
+        {
+            "fullName" : "Martin Millonschik",
+            "dateOfBirth" : "07/11/1990",
+            "aboutMe" : "Soy sociólogo, trabajé en investigación de mercado y hace unos años que las transformaciones digitales y la generción continua de datos me resultan atrapantes. Desde los apuntes abstractos de la facultad de sociales fui llegando a preguntas cada vez más concretas ¿cómo se crean las apps y los sitios web? ¿donde quedan guardados? ¿qué es un algoritmo? ¿por qué no me corre este script? Del desarrollo de entornos digitales al modelado de datos y a las herramientas para interpretarlos siempre sigue ahi la misma pregunta ¿qué pueden los datos?",
+            "mail" : "martinmillonschik@gmail.com",
+            "ubication" : "Buenos Aires - Argentina",
+            "title_1" : "Front End:",
+            "skills_1" : " HTML, CSS, JavaScript, Typescript, Angular",
+            "title_2" : "Data Science:",
+            "skills_2" : " Python, SQL, Power BI",
+            "title_3" : "Google Cloud Platforms:",
+            "skills_3" : " Universal Analytics, Firebase, GA4, Datastudio, BigQuery"
+        }
+}
