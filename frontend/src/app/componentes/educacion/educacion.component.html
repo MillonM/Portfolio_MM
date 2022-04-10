@@ -4,29 +4,17 @@
         <h1 id="educacion_titulo"><b>Educación y Docencia</b></h1>
     </div>
   
-    <div class="row" id="educacion">
+    <div *ngFor="let item of educacion" class="row" id="educacion">
         <div class="col-md-4" class="container-fluid" class="text-center">
-            <img id="uba" class="sociologia" src="assets\imagenes\uba.png" class="img-fluid">
+            <img id="uba" class="sociologia" [src]="item.foto" class="img-fluid">
         </div>
         <div class="col-md-6" class="container-fluid" class="text-center">
-            <h2>-UBA- Carrera de Sociología</h2>
-            <p> <b>-2016-</b><br>
-                Licenciado en Sociología<br>
-                Experiencia docente en <b>materias de grado:</b> Sociología del Arte y Metodología de Investigación en Cs.Sociales <br>
-                Experiencia docente en el <b>CBC</b> -Materia: Sociología-
+            <h2>{{item.experiencia}}</h2>
+            <p> <b>{{item.periodo}}</b><br>
+                {{item.titulo}}<br>
+                {{item.detalle_1}}<br>
+                {{item.detalle_2}}
             </p>
-        </div>    
-    </div>
-  
-    <div class="row" id="educacion">
-        <div class="col-md-4" class="container-fluid" class="text-center">
-            <img id="Flacso" class="Flacso" src="assets\imagenes\logo_flacso.jpg" class="img-fluid">
         </div>
-        <div class="col-md-6" class="container-fluid" class="text-center">
-            <h2> Diploma Superior en Gestión de las Nuevas Modalidades de Innovación</h2>
-            <p><b>-2017/2018-</b><br>
-                Docencia en Diplomatura Superior de FLACSO para colaboradores del Ministerio de Ciencia y Técnica.<br>
-            Recorrimos los aportes teóricos al campo de las políticas públicas para el desarrollo en ciencia y técnica y analizamos algunos casos concretos de gestión y formulación de programas para analizar los alcances y potencialidades de la gestión pública.</p>
-        </div>    
     </div>
   </section>

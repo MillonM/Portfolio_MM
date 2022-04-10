@@ -8,10 +8,10 @@ import { InfoPersonalService } from 'src/app/servicios/info-personal.service';
 })
 export class InfoPersonalComponent implements OnInit {
   persona:any;
-  constructor(private miServicio:InfoPersonalService) { }
+  constructor(private ServicioInfo_personal:InfoPersonalService) { }
 
   ngOnInit(): void {
-    this.miServicio.obtenerDatosPersona().subscribe(data_personal =>{
+    this.ServicioInfo_personal.obtenerDatosPersona().subscribe(data_personal =>{
       console.log(data_personal);
       this.persona=data_personal["persona"];
     })

@@ -8,7 +8,7 @@ import { Observable } from 'rxjs';
 export class InfoPersonalService {
 
   constructor(private http:HttpClient) { 
-    console.log("el servicio esta corriendo");
+    console.log("el servicio info-personal esta corriendo");
   }
 
   obtenerDatosPersona():Observable<any>{

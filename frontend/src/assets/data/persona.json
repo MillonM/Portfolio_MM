@@ -11,6 +11,7 @@
             "title_2" : "Data Science:",
             "skills_2" : " Python, SQL, Power BI",
             "title_3" : "Google Cloud Platforms:",
-            "skills_3" : " Universal Analytics, Firebase, GA4, Datastudio, BigQuery"
+            "skills_3" : " Universal Analytics, Firebase, GA4, Datastudio, BigQuery",
+            "imagen_1" : "assets/imagenes/foto_perfil.jpg"
         }
 }

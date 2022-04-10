@@ -1,0 +1,18 @@
+{
+    "educacion" : [
+        {
+            "experiencia" : "-UBA- Carrera de Sociología",
+            "periodo" : "-2016-",
+            "titulo" : "Licenciado en Sociologia",
+            "detalle_1" : "Experiencia docente en materias de grado: Sociología del Arte y Metodología de Investigación en Cs.Sociales",
+            "detalle_2" : "Experiencia docente en el CBC -Materia: Sociología-",
+            "foto" : "assets/imagenes/uba.png"
+        },
+        {
+            "experiencia" : "Diploma Superior en Gestión de las Nuevas Modalidades de Innovación",
+            "periodo" : "-2017/2018-",
+            "titulo" : "Docencia en Diplomatura Superior de FLACSO para colaboradores del Ministerio de Ciencia y Técnica. Recorrimos los aportes teóricos al campo de las políticas públicas para el desarrollo en ciencia y técnica y analizamos algunos casos concretos de gestión y formulación de programas para analizar los alcances y potencialidades de la gestión pública.",
+            "foto" : "assets/imagenes/logo_flacso.jpg"
+        }
+    ]
+}
