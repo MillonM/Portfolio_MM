@@ -2,17 +2,62 @@
 
     <div class="row">
         <div class="col-4 container-fluid">
-            <img class="foto_perfil img-fluid" [src]="persona.imagen_1">
-            <h1 id="nombre"> {{persona.fullName}}</h1>
-            <h2 id="ubicacion">{{persona.ubication}}</h2>
+            <img class="foto_perfil img-fluid" [src]="info_personal.imagen_1">
+            <h1 id="nombre"> {{info_personal.fullName}}</h1>
+            <h2 id="ubicacion">{{info_personal.ubication}}</h2>
         </div>
         <div class="col-8 container-fluid">
             <h1 id="acerca_de">Acerca de</h1>
-            <h6 id="acercaDe" type="button"> <b>{{persona.title_1}}</b>{{persona.skills_1}}</h6>
-            <h6><strong>{{persona.title_2}}</strong>{{persona.skills_2}}</h6>
-            <h6><b>{{persona.title_3}}</b>{{persona.skills_3}}</h6>
-            <p>{{persona.aboutMe}}</p>
-            <button class="btn btn-outline-primary" onclick="cambiarAcercaDe()">Editar</button>
+            <h6 id="acercaDe" type="button"> <b>{{info_personal.title_1}}</b>{{info_personal.skills_1}}</h6>
+            <h6><strong>{{info_personal.title_2}}</strong>{{info_personal.skills_2}}</h6>
+            <h6><b>{{info_personal.title_3}}</b>{{info_personal.skills_3}}</h6>
+            <p>{{info_personal.aboutMe}}</p>
+            <button *ngIf="usuarioAutenticado" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#modalInfoPersonal" (click)="mostrarInfoPersonalActual()">Editar</button>
         </div>
     </div>
   </section>
+
+  <!-- Modal -->
+  <div class="modal fade" id="modalInfoPersonal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Editar información personal</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <form [formGroup]="form">
+                <div class="mb-3">
+                  <label for="front_end" class="form-label">Skills Front End</label>
+                  <input type="text" class="form-control" id="front_end" formControlName="front_end" placeholder="actualizar la descripción para skills Front End">
+                    <div * ngIf="front_end?.invalid && front_end?.touched" class="alert">
+                        <div * ngIf="front_end?.errors.['required']" class="text-danger">
+                            Nueva skills Front end son requeridas para guardar cambios en el formulario.
+                        </div>
+                        <div * ngIf="front_end?.errors.['minlength']" class="text-danger">
+                            Demasiados caracteres cargados. Máximo 100
+                        </div>
+                    </div>
+
+                </div>
+                <div class="mb-3">
+                    <label for="data_science" class="form-label">Skills Data Science</label>
+                    <input type="text" class="form-control" id="data_science" formControlName="data_science" placeholder="actualizar la descripción para skills en Data Science">
+                </div>
+                <div class="mb-3">
+                    <label for="google_cloud_platforms" class="form-label">Skills GMP</label>
+                    <input type="text" class="form-control" id="google_cloud_platforms" formControlName="google_cloud_platforms" placeholder="actualizar la descripción para skills en GMP">
+                </div>
+                <div class="mb-3">
+                    <label for="parrafo_presentacion" class="form-label">Parrafo de presentación</label>
+                    <input type="text" class="form-control" id="parrafo_presentacion" formControlName="parrafo_presentacion" placeholder="actualizar la descripción para tu presentación">
+                </div>
+            </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" id="cerrar_modalInfoPersonal" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar sin guardar</button>
+          <button type="button" class="btn btn-secondary" (click)="guardarInfoPersonal()">Guardar cambios</button>
+        </div>
+      </div>
+    </div>
+  </div>
