@@ -1,12 +1,12 @@
 <section id="info_personal" class="container-fluid">
 
     <div class="row">
-        <div class="col-md-4" class="container-fluid" class="text-center" class="center">
-            <img class="foto_perfil" [src]="persona.imagen_1" class="text-center" class="img-fluid" class="center">
+        <div class="col-4 container-fluid">
+            <img class="foto_perfil img-fluid" [src]="persona.imagen_1">
             <h1 id="nombre"> {{persona.fullName}}</h1>
-            <h2 id="ubicacion">{{persona.ubicacion}}</h2>
+            <h2 id="ubicacion">{{persona.ubication}}</h2>
         </div>
-        <div class="col-md-6" class="text-center">
+        <div class="col-8 container-fluid">
             <h1 id="acerca_de">Acerca de</h1>
             <h6 id="acercaDe" type="button"> <b>{{persona.title_1}}</b>{{persona.skills_1}}</h6>
             <h6><strong>{{persona.title_2}}</strong>{{persona.skills_2}}</h6>

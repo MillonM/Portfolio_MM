@@ -5,10 +5,10 @@
     </div>
   
     <div *ngFor="let item of educacion" class="row" id="educacion">
-        <div class="col-md-4" class="container-fluid" class="text-center">
-            <img id="uba" class="sociologia" [src]="item.foto" class="img-fluid">
+        <div class="col-3 container-fluid">
+            <img id="uba" class="educacion_fotos img-fluid" [src]="item.foto">
         </div>
-        <div class="col-md-6" class="container-fluid" class="text-center">
+        <div class="col-9 container-fluid">
             <h2>{{item.experiencia}}</h2>
             <p> <b>{{item.periodo}}</b><br>
                 {{item.titulo}}<br>
